@@ -26,8 +26,8 @@ function preload() {
    function gotPoses(results){
       if(results.length>0){
          console.log(results),
-         noseX=results[0].pose.nose.x -50;
-         noseY=results[0].pose.nose.y -150;
+         noseX=results[0].pose.nose.x -90;
+         noseY=results[0].pose.nose.y -170;
          console.log("nose x = "+ results[0].pose.nose.x);
          console.log("nose y = "+ results[0].pose.nose.y);
       }
@@ -38,7 +38,7 @@ function preload() {
       fill(255.0,0);
       stroke(103,21,21);
       //circle(noseX,noseY,30);
-      image(Hat,noseX,noseY,100,90);
+      image(Hat,noseX,noseY,200,150);
 
    }
 
